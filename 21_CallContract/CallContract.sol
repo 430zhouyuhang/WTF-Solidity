@@ -27,19 +27,23 @@ contract OtherContract {
 }
 
 contract CallContract{
+    // 传入合约地址,可以在函数里传入目标合约地址，生成目标合约的引用，然后调用目标函数。
     function callSetX(address _Address, uint256 x) external{
         OtherContract(_Address).setX(x);
     }
 
+    // 直接在函数里传入合约的引用，只需要把上面参数的address类型改为目标合约名，比如OtherContract,该函数参数OtherContract _Address底层类型仍然是address
     function callGetX(OtherContract _Address) external view returns(uint x){
         x = _Address.getX();
     }
 
+    // 法3 创建合约变量
     function callGetX2(address _Address) external view returns(uint x){
         OtherContract oc = OtherContract(_Address);
         x = oc.getX();
     }
-
+    // 调用合约并发送ETH
+    // 如果目标合约的函数是payable的，那么我们可以通过调用它来给合约转账：_Name(_Address).f{value: _Value}()，其中_Name是合约名，_Address是合约地址，f是目标函数名，_Value是要转的ETH数额（以wei为单位）。
     function setXTransferETH(address otherContract, uint256 x) payable external{
         OtherContract(otherContract).setX{value: msg.value}(x);
     }

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
-
+// call不是调用合约的推荐方法，因为不安全。但他能让我们在不知道源代码和ABI的情况下调用目标合约，很有用。
 contract OtherContract {
     uint256 private _x = 0; // 状态变量x
     // 收到eth事件，记录amount和gas
@@ -34,6 +34,7 @@ contract Call{
 
     function callSetX(address payable _addr, uint256 x) public payable {
         // call setX()，同时可以发送ETH
+        // 另外call在调用合约时可以指定交易发送的ETH数额和gas数额：目标合约地址.call{value:发送数额, gas:gas数额}(字节码);
         (bool success, bytes memory data) = _addr.call{value: msg.value}(
             abi.encodeWithSignature("setX(uint256)", x)
         );
@@ -43,6 +44,7 @@ contract Call{
 
     function callGetX(address _addr) external returns(uint256){
         // call getX()
+        // call的使用规则如下：目标合约地址.call(字节码);
         (bool success, bytes memory data) = _addr.call(
             abi.encodeWithSignature("getX()")
         );

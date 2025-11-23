@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "877df9ccc5d18f7d",
+    "type": "split",
+    "children": [
+      {
+        "id": "60308623af5f423c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af2ba20cc62a6575",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zzznotelink/函数.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a7c790fcf3890db",
+    "type": "split",
+    "children": [
+      {
+        "id": "6405025b7162334f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75af7e5254be776e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c6615acb4be0a4f0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b8e98ac35c852e49",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d8700d6857ca2b72",
+    "type": "split",
+    "children": [
+      {
+        "id": "03e99b45e1079a9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d77b5bbaba01c8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "zzznotelink/函数.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0735c47cc22a121d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "zzznotelink/函数.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9739690a86988b5b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bbe1b110d86dd3af",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "zzznotelink/函数.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "af2ba20cc62a6575",
+  "lastOpenFiles": [
+    "03_Function/readme.md",
+    "zzznotelink/函数.md",
+    "01_HelloWeb3/readme.md",
+    "zzznotelink",
+    "().md",
+    "10_InsertionSort/readme.md",
+    "11_Modifier/Owner.sol.tmp",
+    "02_ValueTypes/readme.md"
+  ]
+}
