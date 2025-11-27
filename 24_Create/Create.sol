@@ -31,6 +31,6 @@ contract PairFactory{
         pairAddr = address(pair);
         allPairs.push(pairAddr);
         getPair[tokenA][tokenB] = pairAddr;
-        getPair[tokenB][tokenA] = pairAddr;
+        getPair[tokenB][tokenA] = pairAddr; //无论用户以什么顺序查询，都能找到正确的 Pair地址
     }
 }

@@ -21,7 +21,7 @@ tags:
 
 ## 函数选择器
 
-当我们调用智能合约时，本质上是向目标合约发送了一段`calldata`，在remix中发送一次交易后，可以在详细信息中看见`input`即为此次交易的`calldata`
+当我们调用智能合约时，本质上是向目标合约发送了一段[[`calldata`]]，在remix中发送一次交易后，可以在详细信息中看见`input`即为此次交易的`calldata`
 
 ![tx input in remix](./img/29-1.png)
 

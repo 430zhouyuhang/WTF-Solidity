@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "f93de0040b5dc7a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "41d26d460805218a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb0d7876972f52ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_ValueTypes/readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db83128abc083308",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ba9d04cd9884732",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1c70bfe61f97f80",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "40d83a20be69c41d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9fd121a9033f140b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b23aa13bb1116dc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a273485d161fbdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1943cb907f2e12fd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "术语解释/坎昆.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 坎昆"
+            }
+          },
+          {
+            "id": "136d16692ca21cca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "术语解释/坎昆.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 坎昆"
+            }
+          },
+          {
+            "id": "47a5bd3a3140f595",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eb5d0fd63e83b324",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "术语解释/坎昆.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 坎昆"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "bb0d7876972f52ac",
+  "lastOpenFiles": [
+    "29_Selector/readme.md",
+    "REMIX ide相关/控制台输出.md",
+    "REMIX ide相关/屏幕截图 2025-11-27 155651.png",
+    "REMIX ide相关/新建 BMP 图像.bmp",
+    "Pasted image 20251127155656.png",
+    "术语解释/`calldata`.md",
+    "REMIX ide相关",
+    "28_Hash/readme.md",
+    "27_ABIEncode/readme.md",
+    "术语解释/`函数选择器`.md",
+    "27_ABIEncode/补充.md",
+    "26_DeleteContract/readme.md",
+    "术语解释/坎昆.md",
+    "().md",
+    "以太坊坎昆（Cancun）升级.md",
+    "术语解释/address.md",
+    "25_Create2/readme.md",
+    "24_Create/补充.md",
+    "24_Create/readme.md",
+    "术语解释/salt.md",
+    "README.md",
+    "术语解释"
+  ]
+}

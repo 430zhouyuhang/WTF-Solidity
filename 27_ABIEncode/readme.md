@@ -81,7 +81,7 @@ function encodeWithSignature() public view returns(bytes memory result) {
 }
 ```
 
-编码的结果为`0xe87082f1000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000007a58c0be72be218b41c608b7fe7c5bb630736c7100000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000043078414100000000000000000000000000000000000000000000000000000000`，等同于在`abi.encode`编码结果前加上了4字节的`函数选择器`[^说明]。
+编码的结果为`0xe87082f1000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000007a58c0be72be218b41c608b7fe7c5bb630736c7100000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000043078414100000000000000000000000000000000000000000000000000000000`，等同于在`abi.encode`编码结果前加上了4字节的[[`函数选择器`]][^说明]。
 [^说明]: 函数选择器就是通过函数名和参数进行签名处理(Keccak–Sha3)来标识函数，可以用于不同合约之间的函数调用
 
 ### `abi.encodeWithSelector`
@@ -129,7 +129,7 @@ function decode(bytes memory data) public pure returns(uint dx, address daddr, s
 1. 在合约开发中，ABI常配合call来实现对合约的底层调用。
 
     ```solidity  
-    bytes4 selector = contract.getValue.selector;
+    bytes4 selector = contract.getValue.selector; 
 
     bytes memory data = abi.encodeWithSelector(selector, _x);
     (bool success, bytes memory returnedData) = address(contract).staticcall(data);
@@ -137,6 +137,45 @@ function decode(bytes memory data) public pure returns(uint dx, address daddr, s
 
     return abi.decode(returnedData, (uint256));
     ```
+- `contract.getValue.selector` 获取了函数 `getValue` 的 **函数选择器（function selector）**，也就是前面讲的 4 字节标识。
+    
+- `bytes4 selector` → 存储函数选择器，用于低级调用时告诉 EVM “我要调用这个函数”。
+
+- `abi.encodeWithSelector` 会把 **函数选择器 + 参数** 编码成 calldata（调用数据）。
+    
+- `_x` 是传给函数 `getValue` 的参数。
+    
+- 编码后的数据格式：
+    
+
+`[4字节函数选择器][32字节参数1][_x的ABI编码]...`
+
+- 这个 `data` 就是 EVM 需要的低级调用数据。
+
+
+(bool success, bytes memory returnedData) = address(contract).staticcall(data); staticcall 是低级调用的一种，特点：
+
+只读调用 → 不允许修改区块链状态（类似 view/pure 函数）
+
+返回 (bool, bytes)：
+
+success → 调用是否成功
+
+returnedData → 函数返回的 ABI 编码数据
+
+address(contract) → 把合约类型转换为地址类型
+
+.staticcall(data) → 向这个合约地址发送调用数据
+
+
+return abi.decode(returnedData, (uint256));
+returnedData 是 ABI 编码后的返回值
+
+abi.decode 解码成 Solidity 可用类型，这里是 uint256
+
+最终返回函数调用的结果
+
+
 
 2. ethers.js中常用ABI实现合约的导入和函数调用。
 
@@ -147,6 +186,7 @@ function decode(bytes memory data) public pure returns(uint dx, address daddr, s
         */
     const waves = await wavePortalContract.getAllWaves();
     ```
+
 
 3. 对不开源合约进行反编译后，某些函数无法查到函数签名，可通过ABI进行调用。
    - 0x533ba33a() 是一个反编译后显示的函数，只有函数编码后的结果，并且无法查到函数签名
