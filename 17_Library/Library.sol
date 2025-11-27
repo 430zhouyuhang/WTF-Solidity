@@ -68,6 +68,7 @@ contract UseLibrary{
     using Strings for uint256;
     function getString1(uint256 _number) public pure returns(string memory){
         // 库函数会自动添加为uint256型变量的成员
+        // 通过using A for B;指令，库合约 A 中的函数可被附加到类型 B 的变量上，​​实现直接调用​​。注意：调用时，该变量会自动作为函数的第一个参数传入，无需显式传递：
         return _number.toHexString();
     }
 

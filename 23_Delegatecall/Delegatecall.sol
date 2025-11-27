@@ -30,6 +30,8 @@ contract B {
         );
     }
     // 通过delegatecall来调用C的setVars()函数，将改变合约B里的状态变量
+    //     和call不一样，delegatecall在调用合约时可以指定交易发送的gas，但不能指定发送的ETH数额
+    // 注意：delegatecall有安全隐患，使用时要保证当前合约和目标合约的状态变量存储结构相同，并且目标合约安全，不然会造成资产损失。
     function delegatecallSetVars(address _addr, uint _num) external payable{
         // delegatecall setVars()
         (bool success, bytes memory data) = _addr.delegatecall(

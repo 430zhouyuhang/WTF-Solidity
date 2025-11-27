@@ -36,6 +36,7 @@ contract Baba is Yeye{
 
 contract Erzi is Yeye, Baba{
     // 继承两个function: hip()和pop()，输出改为Erzi。
+    //继承时要按辈分最高到最低的顺序排。要写成contract Erzi is Yeye, Baba，而不能写成contract Erzi is Baba, Yeye，不然就会报错。
     function hip() public virtual override(Yeye, Baba){
         emit Log("Erzi");
     }
@@ -53,7 +54,9 @@ contract Erzi is Yeye, Baba{
     }
 }
 
-// 构造函数的继承
+// 构造函数的继承两种方法
+// 在继承时声明父构造函数的参数，例如：contract B is A(1)
+// 2. 在子合约的构造函数中声明构造函数的参数，例如
 abstract contract A {
     uint public a;
 

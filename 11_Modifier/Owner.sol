@@ -14,7 +14,9 @@ contract Owner {
       require(msg.sender == owner); // 检查调用者是否为owner地址
       _; // 如果是的话，继续运行函数主体；否则报错并revert交易
    }
-
+   //多个修饰器的情况 A,B,C
+   // function D() A B C{}
+   // 运行结果 进A，进B，进C，执行D，退C，退B，退A
    // 定义一个带onlyOwner修饰符的函数
    function changeOwner(address _newOwner) external onlyOwner{
       owner = _newOwner; // 只有owner地址运行这个函数，并改变owner
