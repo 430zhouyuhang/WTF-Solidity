@@ -13,12 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_ValueTypes/readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "readme"
+              }
             }
           }
         ]
@@ -40,11 +38,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -59,9 +54,7 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "搜索"
+              }
             }
           },
           {
@@ -69,9 +62,7 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "state": {}
             }
           }
         ]
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "术语解释/坎昆.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,9 +93,7 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 坎昆"
+              }
             }
           },
           {
@@ -113,12 +102,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "术语解释/坎昆.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 坎昆"
+              }
             }
           },
           {
@@ -128,12 +115,8 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+                "useHierarchy": true
+              }
             }
           },
           {
@@ -142,13 +125,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "术语解释/坎昆.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 坎昆"
+                "file": "README.md"
+              }
             }
           }
         ]
@@ -165,33 +143,34 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "bb0d7876972f52ac",
   "lastOpenFiles": [
+    "Pasted image 20251127155656.png",
+    "README.md",
+    "术语解释/`函数选择器`.md",
+    "zzznotelink/函数.md",
+    "().md",
+    "02_ValueTypes/readme.md",
     "29_Selector/readme.md",
     "REMIX ide相关/控制台输出.md",
     "REMIX ide相关/屏幕截图 2025-11-27 155651.png",
     "REMIX ide相关/新建 BMP 图像.bmp",
-    "Pasted image 20251127155656.png",
     "术语解释/`calldata`.md",
     "REMIX ide相关",
     "28_Hash/readme.md",
     "27_ABIEncode/readme.md",
-    "术语解释/`函数选择器`.md",
     "27_ABIEncode/补充.md",
     "26_DeleteContract/readme.md",
     "术语解释/坎昆.md",
-    "().md",
     "以太坊坎昆（Cancun）升级.md",
     "术语解释/address.md",
     "25_Create2/readme.md",
     "24_Create/补充.md",
     "24_Create/readme.md",
     "术语解释/salt.md",
-    "README.md",
     "术语解释"
   ]
 }
