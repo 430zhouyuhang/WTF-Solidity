@@ -12,3 +12,6 @@ artifacts
 **readme_mirror.md**"# 在 .gitignore 中添加" 
 ".deps/" 
 ".states/" 
+".obsidian/workspace.json"     # 忽略布局
+".obsidian/plugins/"           # 忽略插件二进制文件
+".obsidian/themes/"            # 忽略主题文件
