@@ -38,7 +38,7 @@ contract DutchAuction is Ownable, ERC721 {
     }
 
     // 拍卖mint函数
-    function auctionMint(uint256 quantity) external payable{
+    function auctionMint(uint256 quantity) external payable{   //quantity：用户想 mint 的数量
         uint256 _saleStartTime = uint256(auctionStartTime); // 建立local变量，减少gas花费
         require(
         _saleStartTime != 0 && block.timestamp >= _saleStartTime,
@@ -49,7 +49,7 @@ contract DutchAuction is Ownable, ERC721 {
         "not enough remaining reserved for auction to support desired mint amount"
         ); // 检查是否超过NFT上限
 
-        uint256 totalCost = getAuctionPrice() * quantity; // 计算mint成本
+        uint256 totalCost = getAuctionPrice() * quantity; // 计算mint成本，quantitiy是用户打算出价的代币数量，get..是每个代币的eth值。
         require(msg.value >= totalCost, "Need to send more ETH."); // 检查用户是否支付足够ETH
         
         // Mint NFT

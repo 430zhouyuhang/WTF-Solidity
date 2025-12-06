@@ -27,7 +27,7 @@ tags:
 
 这里有一个点需要理解，本节标题是`ERC721`，这里又提到了`EIP721`,这两个是什么关系呢？
 
-`EIP`全称 `Ethereum Improvement Proposals`(以太坊改进建议), 是以太坊开发者社区提出的改进建议, 是一系列以编号排定的文件, 类似互联网上IETF的RFC。
+`EIP`全称 `Ethereum Improvement Proposals`(以太坊改进建议), 是以太坊开发者社区提出的改进建议, 是一系列以编号排定的文件, 类似互联网上[[IETF的RFC。]]
 
 `EIP`可以是 `Ethereum` 生态中任意领域的改进, 比如新特性、ERC、协议改进、编程工具等等。
 
@@ -179,7 +179,7 @@ function _checkOnERC721Received(
 ```
 
 ## IERC721Metadata
-`IERC721Metadata`是`ERC721`的拓展接口，实现了3个查询`metadata`元数据的常用函数：
+`IERC721Metadata`是`ERC721`的拓展接口，实现了3个查询[[`metadata`]]元数据的常用函数：
 
 - `name()`：返回代币名称。
 - `symbol()`：返回代币代号。

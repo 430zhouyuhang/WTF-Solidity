@@ -1,22 +1,24 @@
 {
   "main": {
-    "id": "f93de0040b5dc7a6",
+    "id": "1e682c227efe4640",
     "type": "split",
     "children": [
       {
-        "id": "41d26d460805218a",
+        "id": "674b496344e0b9c1",
         "type": "tabs",
         "children": [
           {
-            "id": "bb0d7876972f52ac",
+            "id": "0838e1bb68d2b446",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "37_Signature/readme.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "readme"
             }
           }
         ]
@@ -25,25 +27,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "db83128abc083308",
+    "id": "d67916320857635e",
     "type": "split",
     "children": [
       {
-        "id": "9ba9d04cd9884732",
+        "id": "e92af635d1cfd612",
         "type": "tabs",
         "children": [
           {
-            "id": "a1c70bfe61f97f80",
+            "id": "8d0acbb27454509a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
-            "id": "40d83a20be69c41d",
+            "id": "9fdc0f31e9f3da3f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -53,16 +58,20 @@
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "byCreatedTimeReverse"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
-            "id": "9fd121a9033f140b",
+            "id": "b55b2568128b7139",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -72,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "b23aa13bb1116dc9",
+    "id": "b389deced005aebd",
     "type": "split",
     "children": [
       {
-        "id": "3a273485d161fbdf",
+        "id": "b9ea6f50c2f37abd",
         "type": "tabs",
         "children": [
           {
-            "id": "1943cb907f2e12fd",
+            "id": "3097ed486151b2f2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "37_Signature/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,48 +102,60 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "readme 的反向链接列表"
             }
           },
           {
-            "id": "136d16692ca21cca",
+            "id": "4d0599ed17c79e01",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "37_Signature/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "readme 的出链列表"
             }
           },
           {
-            "id": "47a5bd3a3140f595",
+            "id": "e652643c8de20c97",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
-            "id": "eb5d0fd63e83b324",
+            "id": "2f0d07647e454e6a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "37_Signature/readme.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "readme 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,40 +164,39 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
     }
   },
-  "active": "bb0d7876972f52ac",
+  "active": "0838e1bb68d2b446",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "zzznotelink/函数.md",
-    "zzznotelink",
-    "testgit.sol",
-=======
-    "Pasted image 20251127155656.png",
-    "README.md",
-    "术语解释/`函数选择器`.md",
-    "zzznotelink/函数.md",
+    "38_NFTSwap/readme.md",
+    "37_Signature/readme.md",
+    "36_MerkleTree/readme.md",
+    "术语解释/`NFT`白名单.md",
+    "17_Library/readme.md",
+    "35_DutchAuction/readme.md",
+    "07_Mapping/readme.md",
+    "36_MerkleTree/MerkleTree.sol.tmp",
+    "11_Modifier/readme.md",
+    "34_ERC721/readme.md",
+    "术语解释/`metadata`.md",
+    "35_DutchAuction/DutchAuction.sol.tmp",
+    "OpenZeppelin的Ownable标准实现.md",
     "().md",
-    "02_ValueTypes/readme.md",
->>>>>>> 33be954b987d58926ae03f5e7a95302b4916c89a
-    "29_Selector/readme.md",
-    "REMIX ide相关/控制台输出.md",
-    "REMIX ide相关/屏幕截图 2025-11-27 155651.png",
-    "REMIX ide相关/新建 BMP 图像.bmp",
-    "术语解释/`calldata`.md",
-    "REMIX ide相关",
-    "28_Hash/readme.md",
+    "`Ownable`合约：.md",
+    "Languages/pt-br/35_DutchAuction/readme.md",
+    "S06_SignatureReplay/readme.md",
+    "Topics/StudyNotes/Notes_34_ERC721_ShuxunOo/ERC721实例分析1_ShuxunOo/readme.md",
+    "Topics/StudyNotes/Notes_34_ERC721_ShuxunOo/ERC721实例分析2_ShuxunOo/BanaCat NFT Contract_02.md",
+    "34_ERC721/补充.md",
+    "34_ERC721/ERC721.sol.tmp",
+    "Languages/pt-br/54_CrossChainBridge/readme.md",
+    "术语解释/IETF的RFC。.md",
+    "33_Airdrop/readme.md",
+    "32_Faucet/readme.md",
+    "31_ERC20/readme.md",
     "27_ABIEncode/readme.md",
-    "27_ABIEncode/补充.md",
-    "26_DeleteContract/readme.md",
-    "术语解释/坎昆.md",
-    "以太坊坎昆（Cancun）升级.md",
-    "术语解释/address.md",
-    "25_Create2/readme.md",
-    "24_Create/补充.md",
-    "24_Create/readme.md",
-    "术语解释/salt.md",
-    "术语解释"
+    "27_ABIEncode/补充.md"
   ]
 }

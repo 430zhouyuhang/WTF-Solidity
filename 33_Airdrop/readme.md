@@ -42,10 +42,10 @@ tags:
     }
     ```
 
-- `multiTransferToken()`函数：发送`ERC20`代币空投，包含`3`个参数：
-  - `_token`：代币合约地址（`address`类型）
-  - `_addresses`：接收空投的用户地址数组（`address[]`类型）
-  - `_amounts`：空投数量数组，对应`_addresses`里每个地址的数量（`uint[]`类型）
+- **`multiTransferToken()`函数：发送`ERC20`代币空投，包含`3`个参数：**
+  - **`_token`：代币合约地址（`address`类型）**
+  - **`_addresses`：接收空投的用户地址数组（`address[]`类型）**
+  - **`_amounts`：空投数量数组，对应`_addresses`里每个地址的数量（`uint[]`类型）**
 
   该函数有两个检查：第一个`require`检查了`_addresses`和`_amounts`两个数组长度是否相等；第二个`require`检查了空投合约的授权额度大于要空投的代币数量总和。
 
@@ -76,7 +76,7 @@ tags:
 
 - `multiTransferETH()`函数：发送`ETH`空投，包含`2`个参数：
   - `_addresses`：接收空投的用户地址数组（`address[]`类型）
-  - `_amounts`：空投数量数组，对应`_addresses`里每个地址的数量（`uint[]`类型）
+  - `_amounts`：空投eth数量数组，对应`_addresses`里每个地址的数量（`uint[]`类型）
 
   ```solidity
   /// 向多个地址转账ETH

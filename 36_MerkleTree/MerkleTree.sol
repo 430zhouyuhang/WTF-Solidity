@@ -96,6 +96,7 @@ contract MerkleTree is ERC721 {
     function _verify(bytes32 leaf, bytes32[] memory proof)
     internal view returns (bool)
     {
-        return MerkleProof.verify(proof, root, leaf);
+        return MerkleProof.verify(proof, root, leaf);//leaf 通常是 对用户地址的 keccak256 哈希：
+        //proof 是用户 mint 时提交的参数，用户钱包（网站）会自动提供 proof
     }
 }

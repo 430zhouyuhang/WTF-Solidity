@@ -18,7 +18,7 @@ contract ERC721 is IERC721, IERC721Metadata{
     // tokenId 到 owner address 的持有人映射
     mapping(uint => address) private _owners;
     // address 到 持仓数量 的持仓量映射
-    mapping(address => uint) private _balances;
+    mapping(address => uint) private _balances; //这个 ERC721 合约里 NFT 的数量。
     // tokenID 到 授权地址 的授权映射
     mapping(uint => address) private _tokenApprovals;
     // owner地址 到 operator地址 的批量授权映射
@@ -92,7 +92,7 @@ contract ERC721 is IERC721, IERC721Metadata{
         emit Approval(owner, to, tokenId);
     }
 
-    // 实现IERC721的approve，将tokenId授权给 to 地址。条件：to不是owner，且msg.sender是owner或授权地址。调用_approve函数。
+    // 实现IERC721的approve，将tokenId授权给 to 地址。条件：to不是owner，且msg.sender是owner或授权地址。调用_approve函数。新的授权会覆盖之后的授权。
     function approve(address to, uint tokenId) external override {
         address owner = _owners[tokenId];
         require(
@@ -128,7 +128,7 @@ contract ERC721 is IERC721, IERC721Metadata{
         require(from == owner, "not owner");
         require(to != address(0), "transfer to the zero address");
 
-        _approve(owner, address(0), tokenId);
+        _approve(owner, address(0), tokenId);//转账后必须清空 approve，因为授权只能由当前 owner 生效
 
         _balances[from] -= 1;
         _balances[to] += 1;

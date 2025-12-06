@@ -20,7 +20,7 @@ tags:
 
 ---
 
-这一讲，我将介绍`Merkle Tree`，以及如何利用`Merkle Tree`发放`NFT`白名单。
+这一讲，我将介绍`Merkle Tree`，以及如何利用`Merkle Tree`发放[[`NFT`白名单]]。
 
 ## `Merkle Tree`
 `Merkle Tree`，也叫默克尔树或哈希树，是区块链的底层加密技术，被比特币和以太坊区块链广泛采用。`Merkle Tree`是一种自下而上构建的加密树，每个叶子是对应数据的哈希，而每个非叶子为它的`2`个子节点的哈希。

@@ -38,7 +38,7 @@ tags:
 
 ## `DutchAuction`合约
 
-代码基于`Azuki`的[代码](https://etherscan.io/address/0xed5af388653567af2f388e6224dc7c4b3241c544#code)简化而成。`DucthAuction`合约继承了之前介绍的`ERC721`和`Ownable`合约：
+代码基于`Azuki`的[代码](https://etherscan.io/address/0xed5af388653567af2f388e6224dc7c4b3241c544#code)简化而成。`DucthAuction`合约继承了之前介绍的`ERC721`和[[11_Modifier/readme#[OpenZeppelin的Ownable标准实现]|Ownable合约]]
 
 ```solidity
 // SPDX-License-Identifier: MIT
