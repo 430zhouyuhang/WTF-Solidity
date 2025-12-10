@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "674b496344e0b9c1",
+        "id": "c2182d8fd3146f8d",
         "type": "tabs",
         "children": [
           {
-            "id": "0838e1bb68d2b446",
+            "id": "5c9e580801a9bdf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "37_Signature/readme.md",
+                "file": "46_ProxyContract/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "联汇编",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "37_Signature/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "readme 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -142,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "37_Signature/readme.md",
+                "file": "46_ProxyContract/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -151,7 +150,8 @@
               "title": "readme 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -168,35 +168,39 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "0838e1bb68d2b446",
+  "active": "5c9e580801a9bdf8",
   "lastOpenFiles": [
-    "38_NFTSwap/readme.md",
+    "术语解释/内联汇编.md",
+    "S16_NFTReentrancy/readme.md",
+    "S01_ReentrancyAttack/readme.md",
+    "57_Flashloan/readme.md",
+    "56_DEX/readme.md",
+    "55_MultiCall/readme.md",
+    "54_CrossChainBridge/readme.md",
+    "53_ERC20Permit/readme.md",
+    "52_EIP712/readme.md",
+    "51_ERC4626/readme.md",
+    "50_MultisigWallet/readme.md",
+    "49_UUPS/readme.md",
+    "48_TransparentProxy/readme.md",
+    "47_Upgrade/readme.md",
+    "46_ProxyContract/readme.md",
+    "03_Function/readme.md",
+    "19_Fallback.md",
     "37_Signature/readme.md",
-    "36_MerkleTree/readme.md",
-    "术语解释/`NFT`白名单.md",
-    "17_Library/readme.md",
-    "35_DutchAuction/readme.md",
-    "07_Mapping/readme.md",
+    "19_Fallback/readme.md",
+    "45_Timelock/readme.md",
+    "44_TokenLocker/readme.md",
+    "43_TokenVesting/readme.md",
+    "42_PaymentSplit/readme.md",
+    "41_WETH/readme.md",
+    "40_ERC1155/readme.md",
+    "39_Random/readme.md",
+    "39_Random/Random.sol.tmp",
+    "未命名.base",
+    "未命名.canvas",
     "36_MerkleTree/MerkleTree.sol.tmp",
-    "11_Modifier/readme.md",
-    "34_ERC721/readme.md",
-    "术语解释/`metadata`.md",
     "35_DutchAuction/DutchAuction.sol.tmp",
-    "OpenZeppelin的Ownable标准实现.md",
-    "().md",
-    "`Ownable`合约：.md",
-    "Languages/pt-br/35_DutchAuction/readme.md",
-    "S06_SignatureReplay/readme.md",
-    "Topics/StudyNotes/Notes_34_ERC721_ShuxunOo/ERC721实例分析1_ShuxunOo/readme.md",
-    "Topics/StudyNotes/Notes_34_ERC721_ShuxunOo/ERC721实例分析2_ShuxunOo/BanaCat NFT Contract_02.md",
-    "34_ERC721/补充.md",
-    "34_ERC721/ERC721.sol.tmp",
-    "Languages/pt-br/54_CrossChainBridge/readme.md",
-    "术语解释/IETF的RFC。.md",
-    "33_Airdrop/readme.md",
-    "32_Faucet/readme.md",
-    "31_ERC20/readme.md",
-    "27_ABIEncode/readme.md",
-    "27_ABIEncode/补充.md"
+    "34_ERC721/ERC721.sol.tmp"
   ]
 }

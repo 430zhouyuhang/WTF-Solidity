@@ -72,7 +72,7 @@ function <function name>([parameter types[, ...]]) {internal|external|public|pri
 5. 通过调用发送以太币。
 6. 调用任何未标记 `view` 或 `pure` 的函数。
 7. 使用低级调用（low-level calls）。
-8. 使用包含某些操作码的内联汇编。
+8. 使用包含某些操作码的[[内联汇编]]。
 
 为了帮助大家理解，我画了一个马里奥插图。在这幅插图中，我将合约中的状态变量（存储在链上）比作碧琪公主，三种不同的角色代表不同的关键字。
 

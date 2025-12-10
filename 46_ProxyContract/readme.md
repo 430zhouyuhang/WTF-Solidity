@@ -45,7 +45,7 @@ tags:
 
 - 首先部署逻辑合约`Logic`。
 - 创建代理合约`Proxy`，状态变量`implementation`记录`Logic`合约地址。
-- `Proxy`合约利用回调函数`fallback`，将所有调用委托给`Logic`合约
+- `Proxy`合约利用回调函数[[19_Fallback/readme#回退函数 fallback|fallback]]，将所有调用委托给`Logic`合约
 - 最后部署调用示例`Caller`合约，调用`Proxy`合约。
 - **注意**：`Logic`合约和`Proxy`合约的状态变量存储结构相同，不然`delegatecall`会产生意想不到的行为，有安全隐患。
 
@@ -65,7 +65,7 @@ contract Proxy {
     }
 ```
 
-`Proxy`的回调函数将外部对本合约的调用委托给 `Logic` 合约。这个回调函数很别致，它利用内联汇编（inline assembly），让本来不能有返回值的回调函数有了返回值。其中用到的内联汇编操作码：
+`Proxy`的回调函数将外部对本合约的调用委托给 `Logic` 合约。这个回调函数很别致，它利用[[内联汇编]]，让本来不能有返回值的回调函数有了返回值。其中用到的内联汇编操作码：
 
 - `calldatacopy(t, f, s)`：将calldata（输入数据）从位置`f`开始复制`s`字节到mem（内存）的位置`t`。
 - `delegatecall(g, a, in, insize, out, outsize)`：调用地址`a`的合约，输入为`mem[in..(in+insize))` ，输出为`mem[out..(out+outsize))`， 提供`g`wei的以太坊gas。这个操作码在错误时返回`0`，在成功时返回`1`。

@@ -8,7 +8,7 @@ import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 contract Random is ERC721, VRFConsumerBaseV2{
     // NFT相关
     uint256 public totalSupply = 100; // 总供给
-    uint256[100] public ids; // 用于计算可供mint的tokenId
+    uint256[100] public ids; // 剩余可选 tokenId 的映射表（虚拟洗牌数组）
     uint256 public mintCount; // 已mint数量
 
     // chainlink VRF参数
@@ -49,16 +49,25 @@ contract Random is ERC721, VRFConsumerBaseV2{
     * 输入uint256数字，返回一个可以mint的tokenId
     */
     function pickRandomUniqueId(uint256 random) private returns (uint256 tokenId) {
-        //先计算减法，再计算++, 关注(a++，++a)区别
-        uint256 len = totalSupply - mintCount++; // 可mint数量
-        require(len > 0, "mint close"); // 所有tokenId被mint完了
-        uint256 randomIndex = random % len; // 获取链上随机数
+        uint256 len = totalSupply - mintCount++;     // 当前还剩多少个没 mint 的
+        require(len > 0, "mint close");
 
-        //随机数取模，得到tokenId，作为数组下标，同时记录value为len-1，如果取模得到的值已存在，则tokenId取该数组下标的value
-        tokenId = ids[randomIndex] != 0 ? ids[randomIndex] : randomIndex; // 获取tokenId
-        ids[randomIndex] = ids[len - 1] == 0 ? len - 1 : ids[len - 1]; // 更新ids 列表
-        ids[len - 1] = 0; // 删除最后一个元素，能返还gas
+        uint256 randomIndex = random % len;          // 在 [0, len-1] 里随机选一个下标
+
+        // 1. 先从 ids[randomIndex] 里面“取值”
+        //    - 如果 ids[randomIndex] != 0，说明这个位置被塞过别的 tokenId，用它
+        //    - 如果 == 0，说明这个位置还没被改过，就用 randomIndex 自己当 tokenId
+        tokenId = ids[randomIndex] != 0 ? ids[randomIndex] : randomIndex;
+
+        // 2. 把“最后一个位置 len-1 对应的值”搬到 randomIndex 上来，填补空位
+        //    - 如果 ids[len-1] == 0，说明它本身就是 len-1
+        //    - 否则用 ids[len-1] 里的值
+        ids[randomIndex] = ids[len - 1] == 0 ? len - 1 : ids[len - 1];
+
+        // 3. 把最后一个位置清零，表示这个位置（原来的最后一个候选）已经被消耗了
+        ids[len - 1] = 0;
     }
+
 
     /** 
     * 链上伪随机数生成
